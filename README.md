@@ -6,10 +6,7 @@ This repository showcases different render functions for Vue 3 components in Sto
 
 ### JSX Syntax
 
-- Label: Rendered Using JSX Syntax
-- Size: Small
-
-The component is rendered using the JSX syntax. The `Button` component is rendered with the provided arguments.
+The story is rendered using the JSX syntax. The `Button` component is rendered with the provided arguments.
 
 ```javascript
 export const JSXSyntax: Story = {
@@ -25,9 +22,7 @@ export const JSXSyntax: Story = {
 
 ### h() Function
 
-- Label: Rendered Using h() function
-
-The component is rendered using the `h()` function. The `Button` component is rendered with the provided arguments.
+The story is rendered using the `h()` function. The `Button` component is rendered with the provided arguments.
 
 ```javascript
 export const HRenderFunction: Story = {
@@ -42,9 +37,7 @@ export const HRenderFunction: Story = {
 
 ### Composition API Component
 
-- Label: Rendered Using Composition Component
-
-The component is rendered using the Composition API. The `Button` component is rendered with the provided arguments, using the Composition API setup and template.
+The story is rendered using the Composition API Component that is returned by  the render function.  the Vue Component uses the Composition API `setup` and `template`.
 
 ```javascript
 export const CompositionApiComponent: Story = {
