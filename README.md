@@ -97,8 +97,8 @@ export const OptionsApiComponent: Story = {
 
 ## Getting Started
 
-1. Clone this repository: `git clone <repository-url>`
-2. Install dependencies: `pnpm install`
+1. Clone this repository: `git clone https://github.com/chakAs3/vue3-storybook-custom-render.git`
+2. Install dependencies: `cd vue3-jsx & pnpm install`
 3. Run Storybook: `pnpm run storybook`
 4. Open your browser and visit `http://localhost:6006` to view the Storybook.
 
