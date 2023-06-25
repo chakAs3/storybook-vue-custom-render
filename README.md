@@ -6,7 +6,7 @@ This repository showcases different render functions for Vue 3 components in Sto
 
 ### JSX Syntax
 
-The story is rendered using the JSX syntax. The `Button` component is rendered with the provided arguments.
+The story is rendered using the JSX syntax. the render function here is the usual vue `render()` function, similar to the one we use Vue component if we use JSX, and similar to the one used in Storybook React story
 
 ```javascript
 export const JSXSyntax: Story = {
@@ -20,9 +20,9 @@ export const JSXSyntax: Story = {
 };
 ```
 
-### h() Function
+### Vue render function h()
 
-The story is rendered using the `h()` function. The `Button` component is rendered with the provided arguments.
+The story is rendered using the `h()` function. the render function here is the usual vue `render()` function, similar to the one we use Vue component.
 
 ```javascript
 export const HRenderFunction: Story = {
