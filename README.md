@@ -22,7 +22,7 @@ export const JSXSyntax: Story = {
 
 ### Vue render function h()
 
-The story is rendered using the `h()` function. the render function here is the usual vue `render()` function, similar to the one we use Vue component.
+The story is rendered using the `h()` function. the render function here is the usual vue `render()` function, similar to the one you define in a typical Vue component.
 
 ```javascript
 export const HRenderFunction: Story = {
@@ -63,9 +63,7 @@ export const CompositionApiComponent: Story = {
 
 ### Options API Component
 
-- Label: Rendered using Composition Component
-
-The component is rendered using the Options API. The `Button` component is rendered with the provided arguments, using the Options API props and data properties.
+The story is rendered using the Options API component returned by the Story render function . using the Options API props and data properties.
 
 ```javascript
 export const OptionsApiComponent: Story = {
