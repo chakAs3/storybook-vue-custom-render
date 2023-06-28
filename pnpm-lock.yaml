@@ -31,8 +31,8 @@ devDependencies:
     specifier: ^7.1.0-alpha.39
     version: 7.1.0-alpha.39
   '@storybook/vue3':
-    specifier: link:/Users/chakir/devs/sb/storybook/code/renderers/vue3
-    version: link:../sb/storybook/code/renderers/vue3
+    specifier: 7.1.0-alpha.39
+    version: 7.1.0-alpha.39(@vue/compiler-core@3.3.4)(vue@3.3.4)
   '@storybook/vue3-vite':
     specifier: 7.1.0-alpha.39
     version: 7.1.0-alpha.39(@vue/compiler-core@3.3.4)(react-dom@18.2.0)(react@18.2.0)(typescript@5.1.3)(vite@4.3.9)(vue@3.3.4)
@@ -2787,6 +2787,29 @@ packages:
       - utf-8-validate
       - vite-plugin-glimmerx
       - vue
+    dev: true
+
+  /@storybook/vue3@7.1.0-alpha.39(@vue/compiler-core@3.3.4)(vue@3.3.4):
+    resolution: {integrity: sha512-Qm7g3L4P0/O4ZP3x9xsPQzGnaX26m95zJSRZeVl0buxRQRm2ER5ThkQRnHxyS/f9iLHax4tRFLsEzTv9QeGi/g==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      '@vue/compiler-core': ^3.0.0
+      vue: ^3.0.0
+    dependencies:
+      '@storybook/core-client': 7.1.0-alpha.39
+      '@storybook/docs-tools': 7.1.0-alpha.39
+      '@storybook/global': 5.0.0
+      '@storybook/preview-api': 7.1.0-alpha.39
+      '@storybook/types': 7.1.0-alpha.39
+      '@vue/compiler-core': 3.3.4
+      lodash: 4.17.21
+      ts-dedent: 2.2.0
+      type-fest: 3.12.0
+      vue: 3.3.4
+      vue-component-type-helpers: 1.8.3
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
     dev: true
 
   /@testing-library/dom@9.3.1:

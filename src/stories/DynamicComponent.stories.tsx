@@ -1,6 +1,6 @@
 import type { Meta, StoryObj, VueRenderer } from '@storybook/vue3';
 import type { DecoratorFunction } from "@storybook/types"
-import {  Ref, reactive, ref, shallowReactive } from "vue";
+import {  ref, shallowReactive } from "vue";
 
 import { JSXComponent } from './JSXComp.tsx';
 import VueComponent from './Button.vue';
@@ -11,7 +11,7 @@ const MyComponent =  currentCom.component
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
 const decorators:DecoratorFunction<VueRenderer>[] = []// [(storyFn)=> h('div',{style:{border:'2px solid red',padding:'20px'}} ,h(storyFn()) )]
 const meta = {
-  title: 'Example/DynamicComponent',
+  title: 'Example/Dynamic Component',
   component:MyComponent,
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/vue/writing-docs/autodocs
   tags: ['autodocs'],
