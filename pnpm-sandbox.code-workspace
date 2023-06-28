@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../sb/storybook.worktrees/next"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.js": "javascriptreact"
+		},
+		"typescript.tsdk": "./code/node_modules/typescript/lib"
+	}
+}
