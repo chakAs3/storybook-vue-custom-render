@@ -18,7 +18,7 @@
     "@storybook/addon-essentials": "7.1.0-alpha.41",
     "@storybook/addon-interactions": "7.1.0-alpha.41",
     "@storybook/addon-links": "7.1.0-alpha.41",
-    "@storybook/blocks": "7.1.0-alpha.41",
+    "@storybook/blocks": "npm:@storybook-vue/blocks",
     "@storybook/testing-library": "^0.2.0",
     "@storybook/types": "7.1.0-alpha.41",
     "@storybook/vue3": "npm:@storybook-vue/vue3",
@@ -34,7 +34,8 @@
   },
   "pnpm": {
     "overrides": {
-      "semver@<7.5.2": ">=7.5.2"
+      "semver@<7.5.2": ">=7.5.2",
+      "@storybook/components": "npm:@storybook-vue/components@7.1.0-alpha.41"
     }
   }
 }
