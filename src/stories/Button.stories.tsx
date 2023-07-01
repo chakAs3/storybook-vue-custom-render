@@ -5,7 +5,7 @@ import {  h } from "vue";
 import Button from './Button.vue';
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
-const decorators:DecoratorFunction<VueRenderer>[] = [(storyFn)=> h('div',{style:{border:'2px solid red',padding:'20px'}} ,h(storyFn()) )]
+const decorators:DecoratorFunction<VueRenderer>[] = [(storyFn)=> h('div',{style:{border:'2px solid red',padding:'20px'}} ,h(storyFn) )]
 const meta = {
   title: 'Example/Custom Render Function',
   component: Button,
