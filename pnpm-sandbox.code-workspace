@@ -4,7 +4,7 @@
 			"path": "."
 		},
 		{
-			"path": "../sb/storybook.worktrees/next"
+			"path": "../sb/storybook"
 		}
 	],
 	"settings": {
