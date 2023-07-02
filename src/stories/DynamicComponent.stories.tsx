@@ -1,6 +1,6 @@
 import type { Meta, StoryObj, VueRenderer } from '@storybook/vue3';
-import type { DecoratorFunction } from "@storybook/types"
-import {  ref, shallowReactive } from "vue";
+import type { ArgTypes, Args, DecoratorFunction } from "@storybook/types"
+import {  h, ref, shallowReactive } from "vue";
 
 import { JSXComponent } from './JSXComp.tsx';
 import VueComponent from './Button.vue';
@@ -9,7 +9,7 @@ const currentCom = shallowReactive<{component:any }>({component:( 1 === 1 )? Vue
 const MyComponent =  currentCom.component
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
-const decorators:DecoratorFunction<VueRenderer>[] = []// [(storyFn)=> h('div',{style:{border:'2px solid red',padding:'20px'}} ,h(storyFn()) )]
+const decorators:DecoratorFunction<VueRenderer>[] = [(storyFn)=> h('div',{style:{border:'2px solid red',padding:'20px'}} ,h(storyFn) )]
 const meta = {
   title: 'Example/Dynamic Component',
   component:MyComponent,
@@ -29,10 +29,10 @@ export const CompositionApiComponent: Story = {
   args:{
     label: 'Dynamic Component(JSX,SFC-template) ',
   },
-  render(args) {
+  render(args: Args) {
     return ({
       components: { MyComponent },
-      setup(props, { attrs }){
+      setup(props: any, { attrs }: any){
         
     
         const counter = ref(4)
@@ -56,7 +56,7 @@ export const OptionsApiComponent: Story = {
   args:{
     label: 'Dynamic Component(JSX,SFC-template)',
   },
-  render(args , { argTypes }) {
+  render(args:Args , { argTypes }: ArgTypes) {
     return ({
       props: Object.keys(argTypes),
       data: () => ({ args , currentCom }),

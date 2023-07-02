@@ -1,9 +1,13 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 overrides:
   semver@<7.5.2: '>=7.5.2'
-  '@storybook/vue3-vite': npm:@storybook-vue/vue3-vite@^7.1.0-alpha.41.4
-  '@storybook/vue3': link:../sb/storybook/code/renderers/vue3
+  '@storybook/components': npm:@storybook-vue/components@7.1.0-alpha.41
+  '@storybook/vue3-vite': npm:@storybook-vue/vue3-vite@7.1.0-alpha.41.3
 
 dependencies:
   '@vitejs/plugin-vue-jsx':
@@ -33,11 +37,11 @@ devDependencies:
     specifier: 7.1.0-alpha.41
     version: 7.1.0-alpha.41
   '@storybook/vue3':
-    specifier: link:../sb/storybook/code/renderers/vue3
-    version: link:../sb/storybook/code/renderers/vue3
+    specifier: npm:@storybook-vue/vue3
+    version: /@storybook-vue/vue3@7.1.0-alpha.41.3(@vue/compiler-core@3.3.4)(vue@3.3.4)
   '@storybook/vue3-vite':
-    specifier: npm:@storybook-vue/vue3-vite@^7.1.0-alpha.41.4
-    version: /@storybook-vue/vue3-vite@7.1.0-alpha.41.4(react-dom@18.2.0)(react@18.2.0)(typescript@5.1.6)(vite@4.3.9)(vue@3.3.4)
+    specifier: npm:@storybook-vue/vue3-vite@7.1.0-alpha.41.3
+    version: /@storybook-vue/vue3-vite@7.1.0-alpha.41.3(@vue/compiler-core@3.3.4)(react-dom@18.2.0)(react@18.2.0)(typescript@5.1.6)(vite@4.3.9)(vue@3.3.4)
   '@vitejs/plugin-vue':
     specifier: ^4.2.3
     version: 4.2.3(vite@4.3.9)(vue@3.3.4)
@@ -53,9 +57,6 @@ devDependencies:
   storybook:
     specifier: 7.1.0-alpha.41
     version: 7.1.0-alpha.41
-  typescript:
-    specifier: ^5.1.6
-    version: 5.1.6
   vite:
     specifier: ^4.3.9
     version: 4.3.9
@@ -1938,8 +1939,61 @@ packages:
     resolution: {integrity: sha512-XJfwUVUKDHF5ugKwIcxEgc9k8b7HbznCp6eUfWgu710hMPNIO4aw4/zB5RogDQz8nd6gyCDpU9O/m6qYEWY6yQ==}
     dev: true
 
-  /@storybook-vue/vue3-vite@7.1.0-alpha.41.4(react-dom@18.2.0)(react@18.2.0)(typescript@5.1.6)(vite@4.3.9)(vue@3.3.4):
-    resolution: {integrity: sha512-a+fpOJ07Jy19ana5XuGInPYO/QxbcANIiN9BmbiPDRKyknAFZ8I3QgUoOI0/oFgXnYWqaE32odNWAi50Q4VeuA==}
+  /@storybook-vue/blocks@7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-jw3xTgPrh3AIR0aDxBUbzLofiN1Rs+GTneFdgZNqUN2h97Wo0o+niawfXyK5emqPq9ZZRl+spkEFmwk0fisQTQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@storybook/channels': 7.1.0-alpha.41
+      '@storybook/client-logger': 7.1.0-alpha.41
+      '@storybook/components': /@storybook-vue/components@7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/core-events': 7.1.0-alpha.41
+      '@storybook/csf': 0.1.1
+      '@storybook/docs-tools': 7.1.0-alpha.41
+      '@storybook/global': 5.0.0
+      '@storybook/manager-api': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/preview-api': 7.1.0-alpha.41
+      '@storybook/theming': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/types': 7.1.0-alpha.41
+      '@types/lodash': 4.14.195
+      color-convert: 2.0.1
+      dequal: 2.0.3
+      lodash: 4.17.21
+      markdown-to-jsx: 7.2.1(react@18.2.0)
+      memoizerific: 1.11.3
+      polished: 4.2.2
+      react: 18.2.0
+      react-colorful: 5.6.1(react-dom@18.2.0)(react@18.2.0)
+      react-dom: 18.2.0(react@18.2.0)
+      telejson: 7.1.0
+      ts-dedent: 2.2.0
+      util-deprecate: 1.0.2
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+    dev: true
+
+  /@storybook-vue/components@7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-fZ6f8s3b0+kNlSci4NTl93BelosmY+8ltarAYEpqqSjmG0PIthkq0LnMJRR7NyVl+0Zo1HvuwoOi7TSSsnGufQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@storybook/client-logger': 7.1.0-alpha.41
+      '@storybook/csf': 0.1.1
+      '@storybook/global': 5.0.0
+      '@storybook/theming': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/types': 7.1.0-alpha.41
+      memoizerific: 1.11.3
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      use-resize-observer: 9.1.0(react-dom@18.2.0)(react@18.2.0)
+      util-deprecate: 1.0.2
+    dev: true
+
+  /@storybook-vue/vue3-vite@7.1.0-alpha.41.3(@vue/compiler-core@3.3.4)(react-dom@18.2.0)(react@18.2.0)(typescript@5.1.6)(vite@4.3.9)(vue@3.3.4):
+    resolution: {integrity: sha512-SRRws56dXji66WwrV8gT9T67XxgiQZunamHld6a2c1KjKRJrwGPLmhb5prem4NP4/RZ1e0WoQ+nWoY+GjfIyVw==}
     engines: {node: ^14.18 || >=16}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -1973,6 +2027,33 @@ packages:
       - supports-color
       - utf-8-validate
       - vite-plugin-glimmerx
+    dev: true
+
+  /@storybook-vue/vue3@7.1.0-alpha.41.3(@vue/compiler-core@3.3.4)(vue@3.3.4):
+    resolution: {integrity: sha512-K0R/3DqhxcgX/hBaB44DwSUN353vJkVRJ05eVgVScpaLC3g0W/1jaxgEAnlZLDK9ftjpHxhyRJ3z2SgE9q7tGw==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      '@vue/compiler-core': ^3.2.47
+      vue: ^3.2.47
+    peerDependenciesMeta:
+      '@vue/compiler-core':
+        optional: true
+      vue:
+        optional: true
+    dependencies:
+      '@storybook/core-client': 7.1.0-alpha.41
+      '@storybook/docs-tools': 7.1.0-alpha.41
+      '@storybook/global': 5.0.0
+      '@storybook/preview-api': 7.1.0-alpha.41
+      '@storybook/types': 7.1.0-alpha.41
+      '@vue/compiler-core': 3.3.4
+      lodash: 4.17.21
+      ts-dedent: 2.2.0
+      type-fest: 3.12.0
+      vue: 3.3.4
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
     dev: true
 
   /@storybook/addon-actions@7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0):

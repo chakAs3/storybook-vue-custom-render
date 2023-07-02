@@ -28,7 +28,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "7.1.0-alpha.41",
-    "typescript": "^5.1.6",
     "vite": "^4.3.9",
     "vue-tsc": "^1.8.3"
   },
