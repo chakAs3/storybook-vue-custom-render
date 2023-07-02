@@ -3,15 +3,7 @@ import './button.css'
 
 export const JSXComponent = defineComponent({
   props: { 
-    /**
-     * label to show on the button
-     * @author chakir
-     * @see http://storybook.js.org/
-     */
     label: String,
-    /**
-     * count on the second button to incremenet 
-     */
     counter: Number 
   },  
   name: 'JSXComponent',

@@ -22,6 +22,7 @@
     "@storybook/testing-library": "^0.2.0",
     "@storybook/types": "7.1.0-alpha.41",
     "@storybook/vue3": "7.1.0-alpha.41",
+    "@storybook/builder-vite": "7.1.0-alpha.41",
     "@storybook/vue3-vite":"7.1.0-alpha.41",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vue/babel-plugin-jsx": "^1.1.5",
@@ -34,7 +35,7 @@
   "pnpm": {
     "overrides": {
       "semver@<7.5.2": ">=7.5.2",
-      "@storybook/vue3-vite": "npm:@storybook-vue/vue3-vite@^7.1.0-alpha.41.4",
+      "@storybook/vue3-vite": "link:../sb/storybook/code/frameworks/vue3-vite",
       "@storybook/vue3": "link:../sb/storybook/code/renderers/vue3"
 
     }
