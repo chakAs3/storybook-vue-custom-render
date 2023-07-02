@@ -18,24 +18,24 @@
     "@storybook/addon-essentials": "7.1.0-alpha.41",
     "@storybook/addon-interactions": "7.1.0-alpha.41",
     "@storybook/addon-links": "7.1.0-alpha.41",
-    "@storybook/blocks": "npm:@storybook-vue/blocks",
+    "@storybook/blocks": "npm:@storybook-vue/blocks@7.1.0-alpha.41.4",
     "@storybook/testing-library": "^0.2.0",
     "@storybook/types": "7.1.0-alpha.41",
     "@storybook/vue3": "npm:@storybook-vue/vue3",
-    "@storybook/vue3-vite": "npm:@storybook-vue/vue3-vite",
+    "@storybook/vue3-vite": "7.1.0-alpha.41",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vue/babel-plugin-jsx": "^1.1.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "7.1.0-alpha.41",
-    "typescript": "^5.1.6",
     "vite": "^4.3.9",
     "vue-tsc": "^1.8.3"
   },
   "pnpm": {
     "overrides": {
       "semver@<7.5.2": ">=7.5.2",
-      "@storybook/components": "npm:@storybook-vue/components@7.1.0-alpha.41"
+      "@storybook/components": "npm:@storybook-vue/components@7.1.0-alpha.41.4",
+      "@storybook/vue3-vite": "npm:@storybook-vue/vue3-vite@7.1.0-alpha.41.4"
     }
   }
 }
