@@ -1,8 +1,13 @@
-import { withModifiers, defineComponent, computed, ref } from 'vue';
+import { withModifiers, defineComponent, ref } from 'vue';
 import './button.css'
 
 export const JSXComponent = defineComponent({
-  props: { label: String,counter: Number },  
+  props: {
+    /** label for jsx component */
+     label: String,
+     /** counter for jsx component */
+     counter: Number
+   },  
   name: 'JSXComponent',
   emits: ['incrementCounter'],
   setup(props , { emit }) {
