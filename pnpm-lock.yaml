@@ -24,9 +24,11 @@ devDependencies:
   '@storybook/blocks':
     specifier: 7.1.0-alpha.41
     version: 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
+
   '@storybook/builder-vite':
     specifier: 7.1.0-alpha.41
     version: 7.1.0-alpha.41(typescript@5.1.6)(vite@4.3.9)
+
   '@storybook/testing-library':
     specifier: ^0.2.0
     version: 0.2.0
@@ -1938,6 +1940,26 @@ packages:
   /@sinclair/typebox@0.25.24:
     resolution: {integrity: sha512-XJfwUVUKDHF5ugKwIcxEgc9k8b7HbznCp6eUfWgu710hMPNIO4aw4/zB5RogDQz8nd6gyCDpU9O/m6qYEWY6yQ==}
     dev: true
+
+
+  /@storybook-vue/components@7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-fZ6f8s3b0+kNlSci4NTl93BelosmY+8ltarAYEpqqSjmG0PIthkq0LnMJRR7NyVl+0Zo1HvuwoOi7TSSsnGufQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@storybook/client-logger': 7.1.0-alpha.41
+      '@storybook/csf': 0.1.1
+      '@storybook/global': 5.0.0
+      '@storybook/theming': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/types': 7.1.0-alpha.41
+      memoizerific: 1.11.3
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      use-resize-observer: 9.1.0(react-dom@18.2.0)(react@18.2.0)
+      util-deprecate: 1.0.2
+    dev: true
+
 
   /@storybook-vue/vue3-vite@7.1.0-alpha.41.6(@vue/compiler-core@3.3.4)(react-dom@18.2.0)(react@18.2.0)(typescript@5.1.6)(vite@4.3.9)(vue@3.3.4):
     resolution: {integrity: sha512-4UiUZpqH9PFE+THmNaZJ6hlHV6GEPxqjaUzP3oqtI7kqXsum50U/+R7xDT2CbmAi2aNK9dqarPrebWIc1INErA==}
