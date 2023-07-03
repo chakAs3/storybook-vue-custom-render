@@ -4,6 +4,7 @@ import {  h, ref, shallowReactive } from "vue";
 
 import { JSXComponent } from './JSXComp.tsx';
 import VueComponent from './Button.vue';
+import Toggle from '@vueform/toggle'
 
 const currentCom = shallowReactive<{component:any }>({component:( 1 === 1 )? VueComponent:JSXComponent})
 const MyComponent =  currentCom.component
@@ -31,7 +32,7 @@ export const CompositionApiComponent: Story = {
   },
   render(args: Args) {
     return ({
-      components: { MyComponent },
+      components: { MyComponent  },
       setup(props: any, { attrs }: any){
         
     
@@ -43,7 +44,9 @@ export const CompositionApiComponent: Story = {
         }
         return { props , args , counter  , attrs ,toggle ,  component:currentCom}
     }, 
-      template: `<button class="storybook-button storybook-button--small" @click="toggle">switch component</button> <br/> <br/>
+      template: `<button class="storybook-button storybook-button--small" @click="toggle">
+                  switch to {{ component.component.name === 'JSXComponent' ? 'SFC Component':'JSX Component' }}
+                 </button>  <br/><br/>
                  <component :is="component.component" v-bind="args" :counter="counter" @incrementCounter="(value)=> counter = value " />` 
     });
   }  

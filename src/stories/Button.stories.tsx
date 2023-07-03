@@ -50,7 +50,7 @@ export const HRenderFunction: Story = {
 
 export const CompositionApiComponent: Story = {
   args:{
-    label: ' Rendered using Composition Component ',
+    label: ' Rendered using Component with Composition API  ',
   },
   render(args) {
     return ({
@@ -58,7 +58,7 @@ export const CompositionApiComponent: Story = {
       setup(props, { attrs }){
         return { props , args , attrs}
     }, 
-      template: `args: <pre>{{ JSON.stringify(args)}}</pre> 
+      template: `<pre>{{ JSON.stringify(args , 0, 2)}}</pre> 
                  <Button v-bind="args"  />` 
     });
   }  
@@ -67,14 +67,14 @@ export const CompositionApiComponent: Story = {
 
 export const OptionsApiComponent: Story = {
   args:{
-    label: ' Rendered usingComposition Component ',
+    label: ' Rendered using Component with Options API  ',
   },
   render(args , { argTypes }) {
     return ({
       props: Object.keys(argTypes),
       data: () => ({ args }),
       components: { Button },
-      template: `<pre> args: {{ JSON.stringify(args)}}</pre><Button v-bind="args" />`
+      template: `<pre>{{ JSON.stringify(args,0,2)}}</pre><Button v-bind="args" />`
     });
   }  
 }

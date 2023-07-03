@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
 
-import { MyCompo2 } from './MyComponents.ts';
+import { MyCompo1 } from './MyComponents.ts';
 
 // More on how to set up stories at: https://storybook.js.org/docs/vue/writing-stories/introduction
 const meta = {
-  title: 'Example/MyCompo2',
-  component: MyCompo2,
+  title: 'Example/My Component 1',
+  component: MyCompo1,
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/vue/writing-docs/autodocs
   tags: ['autodocs'],
-} satisfies Meta<typeof MyCompo2>;
+} satisfies Meta<typeof MyCompo1>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -19,14 +19,14 @@ type Story = StoryObj<typeof meta>;
  */
 export const Primary: Story = {
   args: {
-    primary: true,
+   size: 'medium',
   },
 };
 
 export const Secondary: Story = {
   args: {
-    primary: false,
-  
+    size: 'large',
+    backgroundColor: 'blue',
   },
 };
 

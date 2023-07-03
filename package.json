@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "@vueform/toggle": "^2.1.3",
     "vue": "^3.3.4"
   },
   "devDependencies": {
@@ -19,11 +20,11 @@
     "@storybook/addon-interactions": "7.1.0-alpha.41",
     "@storybook/addon-links": "7.1.0-alpha.41",
     "@storybook/blocks": "7.1.0-alpha.41",
+    "@storybook/builder-vite": "7.1.0-alpha.41",
     "@storybook/testing-library": "^0.2.0",
     "@storybook/types": "7.1.0-alpha.41",
-    "@storybook/vue3": "7.1.0-alpha.41",
-    "@storybook/builder-vite": "7.1.0-alpha.41",
-    "@storybook/vue3-vite":"7.1.0-alpha.41",
+    "@storybook/vue3": "npm:@storybook-vue/vue3@7.1.0-alpha.41.6",
+    "@storybook/vue3-vite": "npm:@storybook-vue/vue3-vite@7.1.0-alpha.41.6",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vue/babel-plugin-jsx": "^1.1.5",
     "react": "^18.2.0",
@@ -34,10 +35,7 @@
   },
   "pnpm": {
     "overrides": {
-      "semver@<7.5.2": ">=7.5.2",
-      "@storybook/vue3-vite": "link:../sb/storybook/code/frameworks/vue3-vite",
-      "@storybook/vue3": "link:../sb/storybook/code/renderers/vue3"
-
+      "semver@<7.5.2": ">=7.5.2"
     }
   }
 }

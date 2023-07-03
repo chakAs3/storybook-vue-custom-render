@@ -3,7 +3,16 @@ import './button.css'
 
 export const JSXComponent = defineComponent({
   props: { 
+    /** 
+     * label for the JSXComponent
+     */
     label: String,
+    /**
+     * counter for the JSXComponent
+     * @default 0
+     * @type Number
+     * @example 1
+     */
     counter: Number 
   },  
   name: 'JSXComponent',
@@ -13,8 +22,6 @@ export const JSXComponent = defineComponent({
     console.log('JSXComponent',props)
     const counter = ref(props.counter ?? 0 ); 
     const inc = () => {
-
-       
         emit('incrementCounter', counter.value++ )
     };
 

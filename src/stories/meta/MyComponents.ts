@@ -1,4 +1,4 @@
-import { PropType, defineComponent, h } from "vue";
+ import { PropType, defineComponent, h } from "vue";
 
 export const MyCompo1  = defineComponent({
   name: 'MyCompo1',
