@@ -8,6 +8,7 @@ const meta = {
   component: MyCompo1,
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/vue/writing-docs/autodocs
   tags: ['autodocs'],
+  decorators: [()=>({  template: '<div style="background-color: pink;padding:10px;border:2px solid black"><story/></div>' })]
 } satisfies Meta<typeof MyCompo1>;
 
 export default meta;
@@ -20,13 +21,14 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
    size: 'medium',
+   backgroundColor: 'red',
   },
 };
 
 export const Secondary: Story = {
   args: {
     size: 'large',
-    backgroundColor: 'blue',
+    c
   },
 };
 

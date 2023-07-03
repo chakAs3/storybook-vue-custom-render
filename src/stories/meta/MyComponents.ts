@@ -1,4 +1,4 @@
- import { PropType, defineComponent, h } from "vue";
+ import { PropType, defineComponent, h  } from "vue";
 
 export const MyCompo1  = defineComponent({
   name: 'MyCompo1',
@@ -26,6 +26,8 @@ export const MyCompo1  = defineComponent({
     },
   },
   setup(props) {
+    console.log('props', props)
+  
     return () => h('pre', JSON.stringify(props, null, 2));
   }
 });
