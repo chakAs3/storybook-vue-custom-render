@@ -1,12 +1,7 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 overrides:
   semver@<7.5.2: '>=7.5.2'
-  '@storybook/components': npm:@storybook-vue/components@7.1.0-alpha.41
 
 dependencies:
   '@vitejs/plugin-vue-jsx':
@@ -27,8 +22,8 @@ devDependencies:
     specifier: 7.1.0-alpha.41
     version: 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
   '@storybook/blocks':
-    specifier: npm:@storybook-vue/blocks
-    version: /@storybook-vue/blocks@7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
+    specifier: 7.1.0-alpha.41
+    version: 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
   '@storybook/testing-library':
     specifier: ^0.2.0
     version: 0.2.0
@@ -37,10 +32,10 @@ devDependencies:
     version: 7.1.0-alpha.41
   '@storybook/vue3':
     specifier: npm:@storybook-vue/vue3
-    version: /@storybook-vue/vue3@7.1.0-alpha.41.3(@vue/compiler-core@3.3.4)(vue@3.3.4)
+    version: /@storybook-vue/vue3@7.1.0-alpha.41.6(@vue/compiler-core@3.3.4)(vue@3.3.4)
   '@storybook/vue3-vite':
-    specifier: 7.1.0-alpha.41
-    version: 7.1.0-alpha.41(@vue/compiler-core@3.3.4)(react-dom@18.2.0)(react@18.2.0)(typescript@5.1.6)(vite@4.3.9)(vue@3.3.4)
+    specifier: npm:@storybook-vue/vue3-vite
+    version: /@storybook-vue/vue3-vite@7.1.0-alpha.41.6(@vue/compiler-core@3.3.4)(react-dom@18.2.0)(react@18.2.0)(typescript@5.1.6)(vite@4.3.9)(vue@3.3.4)
   '@vitejs/plugin-vue':
     specifier: ^4.2.3
     version: 4.2.3(vite@4.3.9)(vue@3.3.4)
@@ -1941,41 +1936,6 @@ packages:
     resolution: {integrity: sha512-XJfwUVUKDHF5ugKwIcxEgc9k8b7HbznCp6eUfWgu710hMPNIO4aw4/zB5RogDQz8nd6gyCDpU9O/m6qYEWY6yQ==}
     dev: true
 
-  /@storybook-vue/blocks@7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-jw3xTgPrh3AIR0aDxBUbzLofiN1Rs+GTneFdgZNqUN2h97Wo0o+niawfXyK5emqPq9ZZRl+spkEFmwk0fisQTQ==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-    dependencies:
-      '@storybook/channels': 7.1.0-alpha.41
-      '@storybook/client-logger': 7.1.0-alpha.41
-      '@storybook/components': /@storybook-vue/components@7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/core-events': 7.1.0-alpha.41
-      '@storybook/csf': 0.1.1
-      '@storybook/docs-tools': 7.1.0-alpha.41
-      '@storybook/global': 5.0.0
-      '@storybook/manager-api': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/preview-api': 7.1.0-alpha.41
-      '@storybook/theming': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/types': 7.1.0-alpha.41
-      '@types/lodash': 4.14.195
-      color-convert: 2.0.1
-      dequal: 2.0.3
-      lodash: 4.17.21
-      markdown-to-jsx: 7.2.1(react@18.2.0)
-      memoizerific: 1.11.3
-      polished: 4.2.2
-      react: 18.2.0
-      react-colorful: 5.6.1(react-dom@18.2.0)(react@18.2.0)
-      react-dom: 18.2.0(react@18.2.0)
-      telejson: 7.1.0
-      ts-dedent: 2.2.0
-      util-deprecate: 1.0.2
-    transitivePeerDependencies:
-      - encoding
-      - supports-color
-    dev: true
-
   /@storybook-vue/components@7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-fZ6f8s3b0+kNlSci4NTl93BelosmY+8ltarAYEpqqSjmG0PIthkq0LnMJRR7NyVl+0Zo1HvuwoOi7TSSsnGufQ==}
     peerDependencies:
@@ -1994,8 +1954,46 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /@storybook-vue/vue3@7.1.0-alpha.41.3(@vue/compiler-core@3.3.4)(vue@3.3.4):
-    resolution: {integrity: sha512-K0R/3DqhxcgX/hBaB44DwSUN353vJkVRJ05eVgVScpaLC3g0W/1jaxgEAnlZLDK9ftjpHxhyRJ3z2SgE9q7tGw==}
+  /@storybook-vue/vue3-vite@7.1.0-alpha.41.6(@vue/compiler-core@3.3.4)(react-dom@18.2.0)(react@18.2.0)(typescript@5.1.6)(vite@4.3.9)(vue@3.3.4):
+    resolution: {integrity: sha512-4UiUZpqH9PFE+THmNaZJ6hlHV6GEPxqjaUzP3oqtI7kqXsum50U/+R7xDT2CbmAi2aNK9dqarPrebWIc1INErA==}
+    engines: {node: ^14.18 || >=16}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+      typescript: ^4.0.0 || ^5.0.0
+      vite: ^3.0.0 || ^4.0.0
+      vue: ^3.2.0 || ^3.3.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@storybook/builder-vite': 7.1.0-alpha.41(typescript@5.1.6)(vite@4.3.9)
+      '@storybook/core-server': 7.1.0-alpha.41
+      '@storybook/vue3': 7.1.0-alpha.41(@vue/compiler-core@3.3.4)(vue@3.3.4)
+      '@vitejs/plugin-vue': 4.2.3(vite@4.3.9)(vue@3.3.4)
+      magic-string: 0.30.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      typescript: 5.1.6
+      vite: 4.3.9
+      vue: 3.3.4
+      vue-component-meta: 1.8.3(typescript@5.1.6)
+    transitivePeerDependencies:
+      - '@preact/preset-vite'
+      - '@vue/compiler-core'
+      - bufferutil
+      - encoding
+      - supports-color
+      - utf-8-validate
+      - vite-plugin-glimmerx
+    dev: true
+
+  /@storybook-vue/vue3@7.1.0-alpha.41.6(@vue/compiler-core@3.3.4)(vue@3.3.4):
+    resolution: {integrity: sha512-H4lW6fU1So08Q/71HoXRpFd0BE5K/wJ61Q9F9Fk6h1eX8vvu7lKVEKqkrmbJytRcYZ+idu3/nX03Hn3QYwbadQ==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       '@vue/compiler-core': ^3.2.47
@@ -2327,7 +2325,7 @@ packages:
     dependencies:
       '@storybook/channels': 7.1.0-alpha.41
       '@storybook/client-logger': 7.1.0-alpha.41
-      '@storybook/components': /@storybook-vue/components@7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/components': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
       '@storybook/core-events': 7.1.0-alpha.41
       '@storybook/csf': 0.1.1
       '@storybook/docs-tools': 7.1.0-alpha.41
@@ -2512,6 +2510,24 @@ packages:
       recast: 0.23.2
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@storybook/components@7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-qHyU0wLsQ+urV6u+Ntspq2msSOKYbllTvInKbKicf6YKf0SHXTD20HuIHIPpBi+vH/nl2AqhyrdlxBW3D4W//w==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@storybook/client-logger': 7.1.0-alpha.41
+      '@storybook/csf': 0.1.1
+      '@storybook/global': 5.0.0
+      '@storybook/theming': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/types': 7.1.0-alpha.41
+      memoizerific: 1.11.3
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      use-resize-observer: 9.1.0(react-dom@18.2.0)(react@18.2.0)
+      util-deprecate: 1.0.2
     dev: true
 
   /@storybook/core-client@7.1.0-alpha.41:
@@ -2802,35 +2818,6 @@ packages:
       '@types/babel__core': 7.20.1
       '@types/express': 4.17.17
       file-system-cache: 2.3.0
-    dev: true
-
-  /@storybook/vue3-vite@7.1.0-alpha.41(@vue/compiler-core@3.3.4)(react-dom@18.2.0)(react@18.2.0)(typescript@5.1.6)(vite@4.3.9)(vue@3.3.4):
-    resolution: {integrity: sha512-ByjuduBMDd/jxBnSenkfHcZd67iLBVvEX4qN/guf/0nuSTWNq8qy6Ms9/qIUQE0GLCNHmW1edj1oYEAiFJpYFQ==}
-    engines: {node: ^14.18 || >=16}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-      vite: ^3.0.0 || ^4.0.0
-    dependencies:
-      '@storybook/builder-vite': 7.1.0-alpha.41(typescript@5.1.6)(vite@4.3.9)
-      '@storybook/core-server': 7.1.0-alpha.41
-      '@storybook/vue3': 7.1.0-alpha.41(@vue/compiler-core@3.3.4)(vue@3.3.4)
-      '@vitejs/plugin-vue': 4.2.3(vite@4.3.9)(vue@3.3.4)
-      magic-string: 0.30.0
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      vite: 4.3.9
-      vue-docgen-api: 4.73.0(vue@3.3.4)
-    transitivePeerDependencies:
-      - '@preact/preset-vite'
-      - '@vue/compiler-core'
-      - bufferutil
-      - encoding
-      - supports-color
-      - typescript
-      - utf-8-validate
-      - vite-plugin-glimmerx
-      - vue
     dev: true
 
   /@storybook/vue3@7.1.0-alpha.41(@vue/compiler-core@3.3.4)(vue@3.3.4):
@@ -3296,12 +3283,6 @@ packages:
       negotiator: 0.6.3
     dev: true
 
-  /acorn@7.4.1:
-    resolution: {integrity: sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
-    dev: true
-
   /acorn@8.9.0:
     resolution: {integrity: sha512-jaVNAFBHNLXspO543WnNNPZFRtavh3skAkITqD0/2aeMkKZTN+254PyhwxFYrk3vQ1xfY+2wbesJMs/JC8/PwQ==}
     engines: {node: '>=0.4.0'}
@@ -3408,14 +3389,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /asap@2.0.6:
-    resolution: {integrity: sha512-BSHWgDSAiKs50o2Re8ppvp3seVHXSRM44cdSsT9FfNEUUZLOGWVCsiWaRPWM1Znn+mqZ1OfVZ3z3DWEzSp7hRA==}
-    dev: true
-
-  /assert-never@1.2.1:
-    resolution: {integrity: sha512-TaTivMB6pYI1kXwrFlEhLeGfOqoDNdTxjCdwRfFFkEA30Eu+k48W34nlok2EYWJfFFzqaEmichdNM7th6M5HNw==}
-    dev: true
-
   /assert@2.0.0:
     resolution: {integrity: sha512-se5Cd+js9dXJnu6Ag2JFc00t+HmHOen+8Q+L7O9zI0PqQXr20uk2J0XQqMxZEeo5U50o8Nvmmx7dZrl+Ufr35A==}
     dependencies:
@@ -3511,13 +3484,6 @@ packages:
       '@babel/helper-define-polyfill-provider': 0.4.0(@babel/core@7.22.5)
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /babel-walk@3.0.0-canary-5:
-    resolution: {integrity: sha512-GAwkz0AihzY5bkwIY5QDR+LvsRQgB/B+1foMPvi0FZPMl5fjD7ICiznUiBdLYMH1QYe6vqu4gWYytZOccLouFw==}
-    engines: {node: '>= 10.0.0'}
-    dependencies:
-      '@babel/types': 7.22.5
     dev: true
 
   /balanced-match@1.0.2:
@@ -3686,12 +3652,6 @@ packages:
       supports-color: 7.2.0
     dev: true
 
-  /character-parser@2.2.0:
-    resolution: {integrity: sha512-+UqJQjFEFaTAs3bNsF2j2kEN1baG/zghZbdqoYEDxGZtJo9LBzl1A+m0D4n3qKx8N2FNv8/Xp6yV9mQmBuptaw==}
-    dependencies:
-      is-regex: 1.1.4
-    dev: true
-
   /chokidar@3.5.3:
     resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==}
     engines: {node: '>= 8.10.0'}
@@ -3834,13 +3794,6 @@ packages:
       inherits: 2.0.4
       readable-stream: 2.3.8
       typedarray: 0.0.6
-    dev: true
-
-  /constantinople@4.0.1:
-    resolution: {integrity: sha512-vCrqcSIq4//Gx74TXXCGnHpulY1dskqLTFGDmhrGxzeXL8lF8kvXv6mpNWlJj1uD4DW23D4ljAqbY4RRaaUZIw==}
-    dependencies:
-      '@babel/parser': 7.22.5
-      '@babel/types': 7.22.5
     dev: true
 
   /content-disposition@0.5.4:
@@ -4046,10 +3999,6 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       esutils: 2.0.3
-    dev: true
-
-  /doctypes@1.1.0:
-    resolution: {integrity: sha512-LLBi6pEqS6Do3EKQ3J0NqHWV5hhb78Pi8vvESYwyOy2c31ZEZVdtitdzsQsKb7878PEERhzUk0ftqGhG6Mz+pQ==}
     dev: true
 
   /dom-accessibility-api@0.5.16:
@@ -4692,10 +4641,6 @@ packages:
       function-bind: 1.1.1
     dev: true
 
-  /hash-sum@2.0.0:
-    resolution: {integrity: sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==}
-    dev: true
-
   /he@1.2.0:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
@@ -4874,13 +4819,6 @@ packages:
     hasBin: true
     dev: true
 
-  /is-expression@4.0.0:
-    resolution: {integrity: sha512-zMIXX63sxzG3XrkHkrAPvm/OVZVSCPNkwMHU8oTX7/U3AL78I0QXCEICXUM13BIa8TYGZ68PiTKfQz3yaTNr4A==}
-    dependencies:
-      acorn: 7.4.1
-      object-assign: 4.1.1
-    dev: true
-
   /is-extglob@2.1.1:
     resolution: {integrity: sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==}
     engines: {node: '>=0.10.0'}
@@ -4954,10 +4892,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       isobject: 3.0.1
-    dev: true
-
-  /is-promise@2.2.2:
-    resolution: {integrity: sha512-+lP4/6lKUBfQjZ2pdxThZvLUAafmZb8OAxFb8XXtiQmS35INgr85hdOGoEs124ez1FCnZJt6jau/T+alh58QFQ==}
     dev: true
 
   /is-regex@1.1.4:
@@ -5141,10 +5075,6 @@ packages:
       supports-color: 8.1.1
     dev: true
 
-  /js-stringify@1.0.2:
-    resolution: {integrity: sha512-rtS5ATOo2Q5k1G+DADISilDA6lv79zIiwFd6CcjuIxGKLFm5C+RLImRscVap9k55i+MOZwgliw+NejvkLuGD5g==}
-    dev: true
-
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
@@ -5211,13 +5141,6 @@ packages:
       universalify: 2.0.0
     optionalDependencies:
       graceful-fs: 4.2.11
-    dev: true
-
-  /jstransformer@1.0.0:
-    resolution: {integrity: sha512-C9YK3Rf8q6VAPDCCU9fnqo3mAfOH6vUGnMcP4AQAYIEpWtfGLpwOTmZ+igtdK5y+VvI2n3CyYSzy4Qh34eq24A==}
-    dependencies:
-      is-promise: 2.2.2
-      promise: 7.3.1
     dev: true
 
   /kind-of@6.0.3:
@@ -5308,11 +5231,6 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
-
-  /lru-cache@8.0.5:
-    resolution: {integrity: sha512-MhWWlVnuab1RG5/zMRRcVGXZLCXrZTgfwMikgzCegsPnG62yDQo5JnqKkrK4jO5iKqDAZGItAqN5CtKBCBWRUA==}
-    engines: {node: '>=16.14'}
-    dev: true
 
   /lz-string@1.5.0:
     resolution: {integrity: sha512-h5bgJWpxJNswbU7qCrV0tIKQCaS3blPDrqKWx+QxzuzL1zGUzij9XCWLrSLsJPu5t+eWA/ycetzYAO5IOMcWAQ==}
@@ -5882,12 +5800,6 @@ packages:
     engines: {node: '>=0.4.0'}
     dev: true
 
-  /promise@7.3.1:
-    resolution: {integrity: sha512-nolQXZ/4L+bP/UGlkfaIujX9BKxGwmQ9OT4mOt5yvy8iK1h3wqTEJCijzGANTCCl9nWjY41juyAn2K3Q1hLLTg==}
-    dependencies:
-      asap: 2.0.6
-    dev: true
-
   /prompts@2.4.2:
     resolution: {integrity: sha512-NxNv/kLguCA7p3jE8oL2aEBsrJWgAakBpgmgK6lpPWV+WuOmY6r2/zbAVnP+T8bQlA0nzHXSJSJW0Hq7ylaD2Q==}
     engines: {node: '>= 6'}
@@ -5914,97 +5826,6 @@ packages:
 
   /proxy-from-env@1.1.0:
     resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
-    dev: true
-
-  /pug-attrs@3.0.0:
-    resolution: {integrity: sha512-azINV9dUtzPMFQktvTXciNAfAuVh/L/JCl0vtPCwvOA21uZrC08K/UnmrL+SXGEVc1FwzjW62+xw5S/uaLj6cA==}
-    dependencies:
-      constantinople: 4.0.1
-      js-stringify: 1.0.2
-      pug-runtime: 3.0.1
-    dev: true
-
-  /pug-code-gen@3.0.2:
-    resolution: {integrity: sha512-nJMhW16MbiGRiyR4miDTQMRWDgKplnHyeLvioEJYbk1RsPI3FuA3saEP8uwnTb2nTJEKBU90NFVWJBk4OU5qyg==}
-    dependencies:
-      constantinople: 4.0.1
-      doctypes: 1.1.0
-      js-stringify: 1.0.2
-      pug-attrs: 3.0.0
-      pug-error: 2.0.0
-      pug-runtime: 3.0.1
-      void-elements: 3.1.0
-      with: 7.0.2
-    dev: true
-
-  /pug-error@2.0.0:
-    resolution: {integrity: sha512-sjiUsi9M4RAGHktC1drQfCr5C5eriu24Lfbt4s+7SykztEOwVZtbFk1RRq0tzLxcMxMYTBR+zMQaG07J/btayQ==}
-    dev: true
-
-  /pug-filters@4.0.0:
-    resolution: {integrity: sha512-yeNFtq5Yxmfz0f9z2rMXGw/8/4i1cCFecw/Q7+D0V2DdtII5UvqE12VaZ2AY7ri6o5RNXiweGH79OCq+2RQU4A==}
-    dependencies:
-      constantinople: 4.0.1
-      jstransformer: 1.0.0
-      pug-error: 2.0.0
-      pug-walk: 2.0.0
-      resolve: 1.22.2
-    dev: true
-
-  /pug-lexer@5.0.1:
-    resolution: {integrity: sha512-0I6C62+keXlZPZkOJeVam9aBLVP2EnbeDw3An+k0/QlqdwH6rv8284nko14Na7c0TtqtogfWXcRoFE4O4Ff20w==}
-    dependencies:
-      character-parser: 2.2.0
-      is-expression: 4.0.0
-      pug-error: 2.0.0
-    dev: true
-
-  /pug-linker@4.0.0:
-    resolution: {integrity: sha512-gjD1yzp0yxbQqnzBAdlhbgoJL5qIFJw78juN1NpTLt/mfPJ5VgC4BvkoD3G23qKzJtIIXBbcCt6FioLSFLOHdw==}
-    dependencies:
-      pug-error: 2.0.0
-      pug-walk: 2.0.0
-    dev: true
-
-  /pug-load@3.0.0:
-    resolution: {integrity: sha512-OCjTEnhLWZBvS4zni/WUMjH2YSUosnsmjGBB1An7CsKQarYSWQ0GCVyd4eQPMFJqZ8w9xgs01QdiZXKVjk92EQ==}
-    dependencies:
-      object-assign: 4.1.1
-      pug-walk: 2.0.0
-    dev: true
-
-  /pug-parser@6.0.0:
-    resolution: {integrity: sha512-ukiYM/9cH6Cml+AOl5kETtM9NR3WulyVP2y4HOU45DyMim1IeP/OOiyEWRr6qk5I5klpsBnbuHpwKmTx6WURnw==}
-    dependencies:
-      pug-error: 2.0.0
-      token-stream: 1.0.0
-    dev: true
-
-  /pug-runtime@3.0.1:
-    resolution: {integrity: sha512-L50zbvrQ35TkpHwv0G6aLSuueDRwc/97XdY8kL3tOT0FmhgG7UypU3VztfV/LATAvmUfYi4wNxSajhSAeNN+Kg==}
-    dev: true
-
-  /pug-strip-comments@2.0.0:
-    resolution: {integrity: sha512-zo8DsDpH7eTkPHCXFeAk1xZXJbyoTfdPlNR0bK7rpOMuhBYb0f5qUVCO1xlsitYd3w5FQTK7zpNVKb3rZoUrrQ==}
-    dependencies:
-      pug-error: 2.0.0
-    dev: true
-
-  /pug-walk@2.0.0:
-    resolution: {integrity: sha512-yYELe9Q5q9IQhuvqsZNwA5hfPkMJ8u92bQLIMcsMxf/VADjNtEYptU+inlufAFYcWdHlwNfZOEnOOQrZrcyJCQ==}
-    dev: true
-
-  /pug@3.0.2:
-    resolution: {integrity: sha512-bp0I/hiK1D1vChHh6EfDxtndHji55XP/ZJKwsRqrz6lRia6ZC2OZbdAymlxdVFwd1L70ebrVJw4/eZ79skrIaw==}
-    dependencies:
-      pug-code-gen: 3.0.2
-      pug-filters: 4.0.0
-      pug-lexer: 5.0.1
-      pug-linker: 4.0.0
-      pug-load: 3.0.0
-      pug-parser: 6.0.0
-      pug-runtime: 3.0.1
-      pug-strip-comments: 2.0.0
     dev: true
 
   /pump@2.0.1:
@@ -6719,10 +6540,6 @@ packages:
     engines: {node: '>=0.6'}
     dev: true
 
-  /token-stream@1.0.0:
-    resolution: {integrity: sha512-VSsyNPPW74RpHwR8Fc21uubwHY7wMDeJLys2IX5zJNih+OnAnaifKHo+1LHT7DAdloQ7apeaaWg8l7qnf/TnEg==}
-    dev: true
-
   /tr46@0.0.3:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
     dev: true
@@ -6730,10 +6547,6 @@ packages:
   /ts-dedent@2.2.0:
     resolution: {integrity: sha512-q5W7tVM71e2xjHZTlgfTDoPF/SmqKG5hddq9SzR49CH2hayqRKJtQ4mtRlSxKaJlR/+9rEM+mnBHf7I2/BQcpQ==}
     engines: {node: '>=6.10'}
-    dev: true
-
-  /ts-map@1.0.3:
-    resolution: {integrity: sha512-vDWbsl26LIcPGmDpoVzjEP6+hvHZkBkLW7JpvwbCv/5IYPJlsbzCVXY3wsCeAxAUeTclNOUZxnLdGh3VBD/J6w==}
     dev: true
 
   /tslib@1.14.1:
@@ -6779,6 +6592,10 @@ packages:
 
   /typedarray@0.0.6:
     resolution: {integrity: sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==}
+    dev: true
+
+  /typesafe-path@0.2.2:
+    resolution: {integrity: sha512-OJabfkAg1WLZSqJAJ0Z6Sdt3utnbzr/jh+NAHoyWHJe8CMSy79Gm085094M9nvTPy22KzTVn5Zq5mbapCI/hPA==}
     dev: true
 
   /typescript@5.1.6:
@@ -6956,39 +6773,23 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
 
-  /void-elements@3.1.0:
-    resolution: {integrity: sha512-Dhxzh5HZuiHQhbvTW9AMetFfBHDMYpo23Uo9btPXgdYP+3T5S+p+jgNy7spra+veYhBP2dCSgxR/i2Y02h5/6w==}
-    engines: {node: '>=0.10.0'}
+  /vue-component-meta@1.8.3(typescript@5.1.6):
+    resolution: {integrity: sha512-NjXVi1r4AVMGb5jiuefb+bpvUJmUddkkZNP3DB4TAjYuYoq6HVqppcqNUrYrbsnsGPAQko/WY+TvQ60BCYTwoA==}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@volar/typescript': 1.7.10
+      '@vue/language-core': 1.8.3(typescript@5.1.6)
+      typesafe-path: 0.2.2
+      typescript: 5.1.6
+      vue-component-type-helpers: 1.8.3
     dev: true
 
   /vue-component-type-helpers@1.8.3:
     resolution: {integrity: sha512-+/nC0Ra571Jqe7QuZObo1WJbHcdHo8d1rcF8EDSuFAl+dQGlMB6zbM4dsrofJY1wIeky/rGkFE6pCmtHaEf/zw==}
-    dev: true
-
-  /vue-docgen-api@4.73.0(vue@3.3.4):
-    resolution: {integrity: sha512-Hx3VZNi630q/JRhHsVo7qeLJdIDkz3JEp/LBITUZQoZBruGyQa7m80uxbEo4JGBpHMxWWHFO9AXrVy7jH4vzFA==}
-    dependencies:
-      '@babel/parser': 7.22.5
-      '@babel/types': 7.22.5
-      '@vue/compiler-dom': 3.3.4
-      '@vue/compiler-sfc': 3.3.4
-      ast-types: 0.16.1
-      hash-sum: 2.0.0
-      lru-cache: 8.0.5
-      pug: 3.0.2
-      recast: 0.23.2
-      ts-map: 1.0.3
-      vue-inbrowser-compiler-independent-utils: 4.71.1(vue@3.3.4)
-    transitivePeerDependencies:
-      - vue
-    dev: true
-
-  /vue-inbrowser-compiler-independent-utils@4.71.1(vue@3.3.4):
-    resolution: {integrity: sha512-K3wt3iVmNGaFEOUR4JIThQRWfqokxLfnPslD41FDZB2ajXp789+wCqJyGYlIFsvEQ2P61PInw6/ph5iiqg51gg==}
-    peerDependencies:
-      vue: '>=2'
-    dependencies:
-      vue: 3.3.4
     dev: true
 
   /vue-template-compiler@2.7.14:
@@ -7098,16 +6899,6 @@ packages:
       isexe: 2.0.0
     dev: true
 
-  /with@7.0.2:
-    resolution: {integrity: sha512-RNGKj82nUPg3g5ygxkQl0R937xLyho1J24ItRCBTr/m1YnZkzJy1hUiHUJrc/VlsDQzsCnInEGSg3bci0Lmd4w==}
-    engines: {node: '>= 10.0.0'}
-    dependencies:
-      '@babel/parser': 7.22.5
-      '@babel/types': 7.22.5
-      assert-never: 1.2.1
-      babel-walk: 3.0.0-canary-5
-    dev: true
-
   /wordwrap@1.0.0:
     resolution: {integrity: sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==}
     dev: true
@@ -7199,3 +6990,7 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
