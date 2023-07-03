@@ -19,6 +19,7 @@
     "@storybook/addon-interactions": "7.1.0-alpha.41",
     "@storybook/addon-links": "7.1.0-alpha.41",
     "@storybook/blocks": "7.1.0-alpha.41",
+    "@storybook/builder-vite": "7.1.0-alpha.41"
     "@storybook/testing-library": "^0.2.0",
     "@storybook/types": "7.1.0-alpha.41",
     "@storybook/vue3": "npm:@storybook-vue/vue3",
@@ -35,7 +36,6 @@
   "pnpm": {
     "overrides": {
       "semver@<7.5.2": ">=7.5.2"
-
     }
   }
 }

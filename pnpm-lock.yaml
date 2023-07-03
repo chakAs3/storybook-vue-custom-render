@@ -24,6 +24,11 @@ devDependencies:
   '@storybook/blocks':
     specifier: 7.1.0-alpha.41
     version: 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
+
+  '@storybook/builder-vite':
+    specifier: 7.1.0-alpha.41
+    version: 7.1.0-alpha.41(typescript@5.1.6)(vite@4.3.9)
+
   '@storybook/testing-library':
     specifier: ^0.2.0
     version: 0.2.0
@@ -1936,6 +1941,7 @@ packages:
     resolution: {integrity: sha512-XJfwUVUKDHF5ugKwIcxEgc9k8b7HbznCp6eUfWgu710hMPNIO4aw4/zB5RogDQz8nd6gyCDpU9O/m6qYEWY6yQ==}
     dev: true
 
+
   /@storybook-vue/components@7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-fZ6f8s3b0+kNlSci4NTl93BelosmY+8ltarAYEpqqSjmG0PIthkq0LnMJRR7NyVl+0Zo1HvuwoOi7TSSsnGufQ==}
     peerDependencies:
@@ -1953,6 +1959,7 @@ packages:
       use-resize-observer: 9.1.0(react-dom@18.2.0)(react@18.2.0)
       util-deprecate: 1.0.2
     dev: true
+
 
   /@storybook-vue/vue3-vite@7.1.0-alpha.41.6(@vue/compiler-core@3.3.4)(react-dom@18.2.0)(react@18.2.0)(typescript@5.1.6)(vite@4.3.9)(vue@3.3.4):
     resolution: {integrity: sha512-4UiUZpqH9PFE+THmNaZJ6hlHV6GEPxqjaUzP3oqtI7kqXsum50U/+R7xDT2CbmAi2aNK9dqarPrebWIc1INErA==}
@@ -2031,7 +2038,7 @@ packages:
         optional: true
     dependencies:
       '@storybook/client-logger': 7.1.0-alpha.41
-      '@storybook/components': /@storybook-vue/components@7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/components': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
       '@storybook/core-events': 7.1.0-alpha.41
       '@storybook/global': 5.0.0
       '@storybook/manager-api': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
@@ -2062,7 +2069,7 @@ packages:
         optional: true
     dependencies:
       '@storybook/client-logger': 7.1.0-alpha.41
-      '@storybook/components': /@storybook-vue/components@7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/components': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
       '@storybook/core-events': 7.1.0-alpha.41
       '@storybook/global': 5.0.0
       '@storybook/manager-api': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
@@ -2088,7 +2095,7 @@ packages:
     dependencies:
       '@storybook/blocks': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
       '@storybook/client-logger': 7.1.0-alpha.41
-      '@storybook/components': /@storybook-vue/components@7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/components': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
       '@storybook/core-common': 7.1.0-alpha.41
       '@storybook/manager-api': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
       '@storybook/node-logger': 7.1.0-alpha.41
@@ -2114,7 +2121,7 @@ packages:
       '@mdx-js/react': 2.3.0(react@18.2.0)
       '@storybook/blocks': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
       '@storybook/client-logger': 7.1.0-alpha.41
-      '@storybook/components': /@storybook-vue/components@7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/components': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
       '@storybook/csf-plugin': 7.1.0-alpha.41
       '@storybook/csf-tools': 7.1.0-alpha.41
       '@storybook/global': 5.0.0
@@ -2183,7 +2190,7 @@ packages:
         optional: true
     dependencies:
       '@storybook/client-logger': 7.1.0-alpha.41
-      '@storybook/components': /@storybook-vue/components@7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/components': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
       '@storybook/core-common': 7.1.0-alpha.41
       '@storybook/core-events': 7.1.0-alpha.41
       '@storybook/global': 5.0.0
@@ -2239,7 +2246,7 @@ packages:
         optional: true
     dependencies:
       '@storybook/client-logger': 7.1.0-alpha.41
-      '@storybook/components': /@storybook-vue/components@7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/components': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
       '@storybook/core-events': 7.1.0-alpha.41
       '@storybook/global': 5.0.0
       '@storybook/manager-api': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
@@ -2262,7 +2269,7 @@ packages:
         optional: true
     dependencies:
       '@storybook/client-logger': 7.1.0-alpha.41
-      '@storybook/components': /@storybook-vue/components@7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/components': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
       '@storybook/core-events': 7.1.0-alpha.41
       '@storybook/global': 5.0.0
       '@storybook/manager-api': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
@@ -2285,7 +2292,7 @@ packages:
         optional: true
     dependencies:
       '@storybook/client-logger': 7.1.0-alpha.41
-      '@storybook/components': /@storybook-vue/components@7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/components': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
       '@storybook/manager-api': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
       '@storybook/preview-api': 7.1.0-alpha.41
       '@storybook/theming': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
@@ -2305,7 +2312,7 @@ packages:
         optional: true
     dependencies:
       '@storybook/client-logger': 7.1.0-alpha.41
-      '@storybook/components': /@storybook-vue/components@7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/components': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)
       '@storybook/core-events': 7.1.0-alpha.41
       '@storybook/global': 5.0.0
       '@storybook/manager-api': 7.1.0-alpha.41(react-dom@18.2.0)(react@18.2.0)

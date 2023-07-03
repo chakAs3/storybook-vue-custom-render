@@ -1,5 +1,8 @@
 <template>
-  <button type="button" :class="classes" @click="onClick" :style="style">{{ label }} </button>
+  <div class="storybook sb-column"> 
+    <h4> SFC Component </h4>
+    <button type="button" :class="classes" @click="onClick" :style="style">{{ label }} </button>
+ </div>
 </template>
 
 <script lang="ts" setup>

@@ -1,10 +1,16 @@
 {
-    "folders": [
-        {
-            "path": "."
-        },
-        {
-            "path": "../sb/storybook"
-        }
-    ]
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../sb/storybook"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.js": "javascriptreact"
+		},
+		"typescript.tsdk": "./code/node_modules/typescript/lib"
+	}
 }
