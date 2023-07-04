@@ -1,5 +1,5 @@
 import type { Meta, StoryObj, VueRenderer } from '@storybook/vue3';
-import type { DecoratorFunction } from "@storybook/types"
+import type { Args, DecoratorFunction, ArgTypes } from "@storybook/types"
 import {  h } from "vue";
 
 import Button from './Button.vue';
@@ -33,7 +33,7 @@ export const JSXSyntax: Story = {
     label: ' Rendered Using JSX Syntax',
     size: 'small',
   },
-  render(args) {
+  render(args:Args) {
     return <Button {...args} />;
   }
 };
@@ -42,7 +42,7 @@ export const HRenderFunction: Story = {
   args:{
     label: ' Rendered Using h() function',
   },
-  render(args) {
+  render(args: Args) {
     return h(Button, args);
   },
 
@@ -52,10 +52,10 @@ export const CompositionApiComponent: Story = {
   args:{
     label: ' Rendered using Component with Composition API  ',
   },
-  render(args) {
+  render(args: Args) {
     return ({
       components: { Button },
-      setup(props, { attrs }){
+      setup(props: any, { attrs }: any){
         return { props , args , attrs}
     }, 
       template: `<pre>{{ JSON.stringify(args , 0, 2)}}</pre> 
@@ -69,7 +69,7 @@ export const OptionsApiComponent: Story = {
   args:{
     label: ' Rendered using Component with Options API  ',
   },
-  render(args , { argTypes }) {
+  render(args:Args , { argTypes }:{ argTypes: ArgTypes}) {
     return ({
       props: Object.keys(argTypes),
       data: () => ({ args }),

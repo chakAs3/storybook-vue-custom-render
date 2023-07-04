@@ -1,5 +1,5 @@
 import type { Meta, StoryObj, VueRenderer } from '@storybook/vue3';
-import type { DecoratorFunction } from "@storybook/types"
+import type { ArgTypes, Args, DecoratorFunction } from "@storybook/types"
 import {  h } from "vue";
 
 import { JSXComponent } from './JSXComp';
@@ -26,7 +26,8 @@ export const JSXSyntax: Story = {
   args: {
     label: ' Label from Story Args passed to JSXComponent',
   },
-  render(args) {
+  render(args:Args) {
+
     return <JSXComponent {...args} />;
   }
 };
@@ -35,7 +36,7 @@ export const HRenderFunction: Story = {
   args:{
     label: ' Rendered Using h() function',
   },
-  render(args) {
+  render(args:Args) {
     return h(JSXComponent, args);
   },
 
@@ -45,10 +46,10 @@ export const CompositionApiComponent: Story = {
   args:{
     label: ' Rendered using Composition Component ',
   },
-  render(args) {
+  render(args:Args) {
     return ({
       components: { JSXComponent },
-      setup(props, { attrs }){
+      setup(props: any, { attrs }: any){
         return { props , args , attrs}
     }, 
       template: `<pre>{{ JSON.stringify(args)}}</pre> 
@@ -62,7 +63,7 @@ export const OptionsApiComponent: Story = {
   args:{
     label: ' Rendered usingComposition Component ',
   },
-  render(args , { argTypes }) {
+  render(args: Args , { argTypes }: ArgTypes) {
     return ({
       props: Object.keys(argTypes),
       data: () => ({ args }),

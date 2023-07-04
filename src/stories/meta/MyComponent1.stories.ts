@@ -7,8 +7,7 @@ const meta = {
   title: 'Example/My Component 1',
   component: MyCompo1,
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/vue/writing-docs/autodocs
-  tags: ['autodocs'],
-  decorators: [()=>({  template: '<div style="background-color: pink;padding:10px;border:2px solid black"><story/></div>' })]
+  tags: ['autodocs']
 } satisfies Meta<typeof MyCompo1>;
 
 export default meta;
@@ -28,7 +27,7 @@ export const Primary: Story = {
 export const Secondary: Story = {
   args: {
     size: 'large',
-    c
+    
   },
 };
 
