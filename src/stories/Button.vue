@@ -9,6 +9,8 @@
 import './button.css';
 import { computed } from 'vue';
 
+import type { Sizes } from './types';
+
 const props = withDefaults(defineProps<{
   /**
    * The label of the button
@@ -21,7 +23,7 @@ const props = withDefaults(defineProps<{
   /**
    * size of the button
    */
-  size?: 'small' | 'medium' | 'large',
+  size?: Sizes ,
   /**
    * background color of the button
    */

@@ -9,7 +9,7 @@
 	],
 	"settings": {
 		"files.associations": {
-			"*.js": "javascriptreact"
+			"*.js": "javascript"
 		},
 		"typescript.tsdk": "./code/node_modules/typescript/lib"
 	}
