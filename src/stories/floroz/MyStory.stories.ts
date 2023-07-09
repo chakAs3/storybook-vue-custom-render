@@ -8,8 +8,6 @@ const meta = {
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/vue/writing-docs/autodocs
   tags: ['autodocs'],
  
-  args: { primary: false }, // default value
-
 } satisfies Meta<typeof Component>;
 
 export default meta;
@@ -18,6 +16,6 @@ type Story = StoryObj<typeof meta>;
 export const MyStory: Story = {
   args: {
     a: ' a value ',
-    b: ' b value',
+    b: 10,
   },
 };

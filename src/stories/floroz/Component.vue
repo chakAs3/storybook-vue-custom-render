@@ -9,6 +9,12 @@
 
 import type { Props } from '../types';
 
-const props = defineProps<Props & { b: string }>();
+const props = defineProps<Props & {
+  /**
+   * description of prop b
+   */
+   b:number
+  
+  }>();
 
 </script>
