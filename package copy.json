@@ -11,7 +11,6 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@storybook/jest": "^0.1.0",
     "@vitejs/plugin-vue-jsx": "^3.0.1",
     "vue": "^3.3.4"
   },
@@ -20,11 +19,10 @@
     "@storybook/addon-interactions": "7.1.0-beta.1",
     "@storybook/addon-links": "7.1.0-beta.1",
     "@storybook/blocks": "7.1.0-beta.1",
-    "@storybook/builder-vite": "link:/Users/chakir/devs/sb/storybook/code/builders/builder-vite",
-    "@storybook/core-events": "7.1.0-beta.1",
     "@storybook/testing-library": "^0.2.0",
     "@storybook/types": "7.1.0-beta.1",
-    "@storybook/vue3": "link:/Users/chakir/devs/sb/storybook/code/renderers/vue3",
+    "@storybook/builder-vite": "7.1.0-beta.1",
+    "@storybook/vue3": "npm:@storybook-vue/vue3",
     "@storybook/vue3-vite": "npm:@storybook-vue/vue3-vite",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vue/babel-plugin-jsx": "^1.1.5",

@@ -28,7 +28,7 @@ export const Primary: Story = {
 export const Secondary: Story = {
   args: {
     size: 'large',
-    c
+    
   },
 };
 
